@@ -85,7 +85,7 @@ mmEnable.onclick = async () => {
 const sslogIn = document.getElementById('click1');
 sslogIn.onclick = async () => {
 	var web3 = new Web3(window.ethereum);
-	const collateral = web3.utils.toBN(web3.utils.toWei('1', 'ether'));
+	const collateral = web3.utils.toBN(web3.utils.toWei('0.5', 'ether'));
 	const schContract = new web3.eth.Contract(ssABI, ssAddress);
 	schContract.setProvider(window.ethereum);
 	try {
